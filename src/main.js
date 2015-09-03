@@ -1,6 +1,6 @@
 
-import echarts from 'echarts/src/echarts';
-import 'echarts/src/chart/wordCloud';
+import echarts from 'echarts/echarts';
+import 'echarts/chart/wordCloud';
 
 
 function createRandomItemStyle() {

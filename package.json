@@ -1,4 +1,7 @@
 {
+  "name": "",
+  "description": "",
+  "version": "",
   "engines": {
     "node": ">= 0.12",
     "iojs": ">= 3.0",
@@ -7,11 +10,12 @@
   "scripts": {
     "build": "webpack"
   },
+  "repository": "git://github.com/uooo/webpack-echarts-starter-kit",
   "dependencies": {
     "babel": "5.8.23",
     "react": "0.14.0-beta3",
     "react-dom": "0.14.0-beta3",
-    "echarts": "2.2.7-beta7"
+    "echarts": "2.2.7-amd-beta2"
   },
   "devDependencies": {
     "babel-loader": "^5.3.2",
