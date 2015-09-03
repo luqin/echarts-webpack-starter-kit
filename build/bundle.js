@@ -48,9 +48,9 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _echartsSrcEcharts = __webpack_require__(1);
+	var _echartsEcharts = __webpack_require__(1);
 
-	var _echartsSrcEcharts2 = _interopRequireDefault(_echartsSrcEcharts);
+	var _echartsEcharts2 = _interopRequireDefault(_echartsEcharts);
 
 	__webpack_require__(83);
 
@@ -168,7 +168,7 @@
 	    }]
 	};
 
-	var mychart = _echartsSrcEcharts2['default'].init(document.getElementById('app'));
+	var mychart = _echartsEcharts2['default'].init(document.getElementById('app'));
 	mychart.setOption(charCloudOption);
 
 /***/ },
@@ -16384,13 +16384,13 @@
 	            );
 	            var data = pixels.data;
 	            var idx;
-	            var zrColor = require('zrender/tool/color');
+	            var zrColor = require('zrenderjs/tool/color');
 	            var color = zrColor.toArray(style.color);
 	            var r = color[0];
 	            var g = color[1];
 	            var b = color[2];
 	            var width = rect.width;
-	             for (var i = 1, l = pointList.length; i < l; i++) {
+	              for (var i = 1, l = pointList.length; i < l; i++) {
 	                idx = ((Math.floor(pointList[i][0]) - rect.x) * ratio
 	                       + (Math.floor(pointList[i][1])- rect.y) * width * ratio * ratio
 	                      ) * 4;
@@ -16508,7 +16508,7 @@
 	            /*
 	            var start = pointList[0];
 	            var end = pointList[pointList.length-1];
-	             if (start && end) {
+	              if (start && end) {
 	                if (start[0] == end[0] &&
 	                    start[1] == end[1]) {
 	                    // 移除最后一个点
@@ -22830,7 +22830,7 @@
 	    var TextShape = __webpack_require__(17);
 	    var RectangleShape = __webpack_require__(23);
 	    var SectorShape = __webpack_require__(69);
-	    //var BeziercurveShape = require('zrender/shape/Beziercurve');
+	    //var BeziercurveShape = require('zrenderjs/shape/Beziercurve');
 	    var IconShape = __webpack_require__(33);
 	    var CandleShape = __webpack_require__(71);
 
