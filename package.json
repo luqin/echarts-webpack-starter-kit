@@ -8,8 +8,8 @@
     "npm": ">= 2.1"
   },
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack --watch --verbose"
+    "build": "gulp build --p",
+    "dev": "gulp"
   },
   "repository": "git://github.com/uooo/webpack-echarts-starter-kit",
   "dependencies": {
@@ -53,7 +53,7 @@
     "nconf": "^0.7.1",
     "node-notifier": "^4.1.0",
     "node-sass": "^3.2.0",
-    "nyan-progress-webpack-plugin": "^1.0.0",
+    "nyan-progress-webpack-plugin": "^1.1.0",
     "react-document-title": "^2.0.0",
     "react-hot-loader": "^1.3.0",
     "react-intl": "^1.1.0",
