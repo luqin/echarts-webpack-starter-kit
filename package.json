@@ -17,7 +17,7 @@
     "react": "0.14.0-beta3",
     "react-dom": "0.14.0-beta3",
     "react-router": "1.0.0-beta4",
-    "echarts": "2.2.8"
+    "echarts": "3.0.0-beta1"
   },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
