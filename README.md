@@ -6,7 +6,7 @@ Demo: http://luqin.github.io/echarts-webpack-starter-kit
 ## Usage
 
 ```js
-import echarts from 'echarts/echarts';
+import echarts from 'echarts';
 import 'echarts/chart/wordCloud';
 
 let mychart = echarts.init(dom);
