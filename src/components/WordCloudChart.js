@@ -1,5 +1,5 @@
 import React from 'react';
-import echarts from 'echarts/echarts';
+import echarts from 'echarts';
 import 'echarts/chart/wordCloud';
 
 function createRandomItemStyle() {
