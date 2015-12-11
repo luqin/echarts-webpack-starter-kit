@@ -1,5 +1,5 @@
 {
-  "name": "webpack-echarts-starter-kit",
+  "name": "echarts-webpack-starter-kit",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "gulp build --p",
-    "dev": "gulp"
+    "start": "gulp"
   },
   "repository": "git://github.com/luqin/echarts-webpack-starter-kit",
   "dependencies": {
@@ -17,7 +17,7 @@
     "react": "0.14.0-beta3",
     "react-dom": "0.14.0-beta3",
     "react-router": "1.0.0-beta4",
-    "echarts": "3.0.0-beta1"
+    "echarts": "3.0.0-beta2"
   },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",

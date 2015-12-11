@@ -37,28 +37,35 @@ module.exports = function (isDevelopment) {
     });
   }
 
+  var entry = {
+    // wordCloud: 'main.js',
+    force: 'pages/force.js'
+  };
+
+  for (var k in entry) {
+    entry[k] = isDevelopment ? [
+      'webpack-dev-server/client?http://localhost:8888',
+      // Why only-dev-server instead of dev-server:
+      // https://github.com/webpack/webpack/issues/418#issuecomment-54288041
+      'webpack/hot/only-dev-server',
+      path.join(constants.SRC_DIR, entry[k])
+    ] : [
+      path.join(constants.SRC_DIR, entry[k])
+    ];
+  }
+
   var config = {
     cache: isDevelopment,
     debug: isDevelopment,
     devtool: isDevelopment ? devtools : '',
-    entry: {
-      app: isDevelopment ? [
-        'webpack-dev-server/client?http://localhost:8888',
-        // Why only-dev-server instead of dev-server:
-        // https://github.com/webpack/webpack/issues/418#issuecomment-54288041
-        'webpack/hot/only-dev-server',
-        path.join(constants.SRC_DIR, 'main.js')
-      ] : [
-        path.join(constants.SRC_DIR, 'main.js')
-      ]
-    },
+    entry: entry,
     output: isDevelopment ? {
-      path: constants.BUILD_DIR,
+      path: path.join(constants.BUILD_DIR, 'assets'),
       filename: '[name].js',
       chunkFilename: '[name]-[chunkhash].js',
       publicPath: 'http://localhost:8888/build/'
     } : {
-      path: constants.BUILD_DIR,
+      path: path.join(constants.BUILD_DIR, 'assets'),
       filename: '[name].js',
       chunkFilename: '[name]-[chunkhash].js'
     },
