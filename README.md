@@ -7,11 +7,20 @@ Demo: http://luqin.github.io/echarts-webpack-starter-kit
 
 ```js
 import echarts from 'echarts';
-import 'echarts/chart/wordCloud';
+import 'echarts/chart/bar';
+import 'echarts/chart/pie';
 
-let mychart = echarts.init(dom);
-let charCloudOption = {...};
-mychart.setOption(charCloudOption);
+let mychart = echarts.init(dom, null, { renderer: 'canvas' });
+mychart.setOption({ ... });
+```
+
+or
+
+```js
+import echarts from 'echarts/dist/echarts'; // or echarts.common or echarts.simple
+
+let mychart = echarts.init(dom, null, { renderer: 'canvas' });
+mychart.setOption({ ... });
 ```
 
 ## Getting Started
