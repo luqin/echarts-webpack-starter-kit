@@ -1,7 +1,5 @@
-import bg from 'gulp-bg';
 import eslint from 'gulp-eslint';
 import gulp from 'gulp';
-import path from 'path';
 import runSequence from 'run-sequence';
 import yargs from 'yargs';
 
