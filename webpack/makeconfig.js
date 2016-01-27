@@ -16,8 +16,9 @@ var devtools = process.env.CONTINUOUS_INTEGRATION
 module.exports = function (isDevelopment) {
 
   var entry = {
-    // wordCloud: 'main.js',
-    force: 'pages/force.js'
+    // wordCloud: 'main',
+    force: 'pages/force',
+    'echarts-all/map': 'pages/echarts-all/map'
   };
 
   for (var k in entry) {
@@ -41,7 +42,7 @@ module.exports = function (isDevelopment) {
       path: path.join(constants.BUILD_DIR, 'assets'),
       filename: '[name].js',
       chunkFilename: '[name]-[chunkhash].js',
-      publicPath: 'http://localhost:8888/build/'
+      publicPath: 'http://localhost:8888/'
     } : {
       path: path.join(constants.BUILD_DIR, 'assets'),
       filename: '[name].js',

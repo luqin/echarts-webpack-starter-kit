@@ -15,7 +15,7 @@
     "react": "0.14.6",
     "react-dom": "0.14.6",
     "react-router": "2.0.0-rc5",
-    "echarts": "3.0.1"
+    "echarts": "3.0.2"
   },
   "devDependencies": {
     "babel": "5.8.23",

@@ -1,22 +1,18 @@
-__webpack_public_path__ = './assets/';
+require([
+  'echarts/lib/echarts',
 
-  require([
-  'echarts',
+  'echarts/extension/dataTool/gexf',
 
-  'echarts/parser/gexf',
+  'echarts/lib/chart/graph',
 
-  'echarts/chart/graph',
-
-  'echarts/component/title',
-  'echarts/component/legend',
-  'echarts/component/geo',
-  'echarts/component/tooltip',
-  'echarts/component/dataRange'
+  'echarts/lib/component/title',
+  'echarts/lib/component/legend',
+  'echarts/lib/component/geo',
+  'echarts/lib/component/tooltip',
+  'echarts/lib/component/visualMap'
 ], function (echarts) {
 
-  var chart = echarts.init(document.getElementById('main'), null, {
-    renderer: 'canvas'
-  });
+  var chart = echarts.init(document.getElementById('main'));
 
   function createNodes(count) {
     var nodes = [];
@@ -54,8 +50,8 @@ __webpack_public_path__ = './assets/';
         layout: 'force',
         animation: false,
         data: item.nodes,
-        x: (idx % 4) * 25 + '%',
-        y: Math.floor(idx / 4) * 25 + '%',
+        left: (idx % 4) * 25 + '%',
+        top: Math.floor(idx / 4) * 25 + '%',
         width: '25%',
         height: '25%',
         force: {

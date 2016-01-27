@@ -5,21 +5,20 @@ Demo: http://luqin.github.io/echarts-webpack-starter-kit
 
 ## Usage
 
-```js
-import echarts from 'echarts';
-import 'echarts/chart/bar';
-import 'echarts/chart/pie';
-
-let mychart = echarts.init(dom, null, { renderer: 'canvas' });
-mychart.setOption({ ... });
+```sh
+$ npm i echarts --save
 ```
 
-or
-
 ```js
+import echarts from 'echarts/lib/echarts';
+import 'echarts/lib/chart/bar';
+import 'echarts/lib/chart/pie';
+// or
 import echarts from 'echarts/dist/echarts'; // or echarts.common or echarts.simple
+// or
+import echarts from 'echarts'; // or echarts/echarts-common or echarts/echarts-simple
 
-let mychart = echarts.init(dom, null, { renderer: 'canvas' });
+let mychart = echarts.init(dom);
 mychart.setOption({ ... });
 ```
 
