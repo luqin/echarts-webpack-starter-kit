@@ -3,20 +3,7 @@ Starter template for [ECharts](https://github.com/luqin/echarts) with [webpack](
 
 Demo: http://luqin.github.io/echarts-webpack-starter-kit
 
-## Usage
+## Examples
 
-```js
-import echarts from 'echarts';
-import 'echarts/chart/wordCloud';
-
-let mychart = echarts.init(dom);
-let charCloudOption = {...};
-mychart.setOption(charCloudOption);
-```
-
-## Getting Started
-
-```sh
-$ npm install
-$ npm run build
-```
+- [echarts 2.x](https://github.com/luqin/echarts-webpack-starter-kit/tree/echarts-2)
+- [echarts 3.x](https://github.com/luqin/echarts-webpack-starter-kit/tree/echarts-3)
