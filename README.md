@@ -1,5 +1,5 @@
 # ECharts Webpack Starter Kit
-Starter template for [ECharts](https://github.com/luqin/echarts) with [webpack](https://github.com/webpack/webpack). 
+Starter template for [ECharts](https://github.com/ecomfe/echarts) with [webpack](https://github.com/webpack/webpack). 
 
 Demo: http://luqin.github.io/echarts-webpack-starter-kit
 
