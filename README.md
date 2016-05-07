@@ -13,10 +13,9 @@ $ npm i echarts --save
 import echarts from 'echarts/lib/echarts';
 import 'echarts/lib/chart/bar';
 import 'echarts/lib/chart/pie';
+
 // or
-import echarts from 'echarts/dist/echarts'; // or echarts.common or echarts.simple
-// or
-import echarts from 'echarts'; // or echarts/echarts-common or echarts/echarts-simple
+import echarts from 'echarts'; // echarts/index.common or echarts/index.simple
 
 let mychart = echarts.init(dom);
 mychart.setOption({ ... });
